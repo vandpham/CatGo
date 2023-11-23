@@ -1,0 +1,30 @@
+@use './../abstracts/variables';
+
+.button-custom {
+    padding: 10px 25px;
+    transition: 0.2s;
+    display: inline-block;
+    font-weight: 500;
+
+    &.transparent {
+        border: 2px solid variables.$color-primary;
+        background: #fff;
+        color: #000000;
+
+        &:hover {
+            background: variables.$color-primary;
+            color: #fff;
+        }
+    }
+
+    &.red {
+        border: 2px solid #00000000;
+        background: variables.$color-primary;
+        color: #fff;
+
+        &:hover {
+            background: darken(variables.$color-primary, 6);
+
+        }
+    }
+}

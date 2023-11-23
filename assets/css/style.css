@@ -1,0 +1,372 @@
+/*=== abstracts css start === */
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address,
+strong,
+i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+.big-heading {
+  font-weight: 700;
+  color: #0C234B;
+}
+@media (min-width: 1200px) {
+  .big-heading {
+    font-size: 50px;
+  }
+}
+
+.heading-medium {
+  font-weight: 700;
+  color: #0C234B;
+}
+@media (min-width: 1200px) {
+  .heading-medium {
+    font-size: 45px;
+  }
+}
+
+.normal-text {
+  font-weight: 500;
+}
+
+.section-title {
+  color: #0C234B;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #0C234B;
+}
+
+@media (min-width: 1200px) {
+  .custom-gutter {
+    --bs-gutter-x: 80px;
+  }
+}
+
+.border-red {
+  border: 1px solid #AB0520;
+}
+
+.border-red-light {
+  border: 1px solid #791022;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+@media (max-width: 1199px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+
+.my-25 {
+  margin: 12px 0;
+}
+
+.text-red {
+  color: #AB0520;
+}
+
+.text-blue {
+  color: #0C234B;
+}
+
+/*===// end of base css === */
+/*=== components css start === */
+.button-custom {
+  padding: 10px 25px;
+  transition: 0.2s;
+  display: inline-block;
+  font-weight: 500;
+}
+.button-custom.transparent {
+  border: 2px solid #AB0520;
+  background: #fff;
+  color: #000000;
+}
+.button-custom.transparent:hover {
+  background: #AB0520;
+  color: #fff;
+}
+.button-custom.red {
+  border: 2px solid rgba(0, 0, 0, 0);
+  background: #AB0520;
+  color: #fff;
+}
+.button-custom.red:hover {
+  background: #8d041a;
+}
+
+.faq .accordion {
+  border-bottom: 2px solid #000;
+}
+.faq .accordion .accordion-item {
+  border: none;
+  border-top: 2px solid;
+  border-radius: 0px;
+  margin-bottom: 20px;
+}
+.faq .accordion .accordion-item .accordion-header .accordion-button {
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  --bs-accordion-border-color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.faq .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+.faq .accordion .accordion-item .accordion-body {
+  max-width: 820px;
+  padding: 10px 0;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+
+.nav-tab-tab .tab-index {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .nav-tab-tab .tab-index {
+    width: 40%;
+  }
+}
+.nav-tab-tab .tab-index .nav-link {
+  border-radius: 0;
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+.nav-tab-tab .tab-index .nav-link p {
+  color: #000;
+  padding: 10px 0;
+}
+.nav-tab-tab .tab-index .nav-link a {
+  color: #000;
+}
+.nav-tab-tab .tab-index .nav-link.active {
+  background: #fff;
+  border-left: 2px solid #000;
+}
+.nav-tab-tab .tab-content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .nav-tab-tab .tab-content {
+    width: 60%;
+  }
+}
+.nav-tab-tab .tab-content .tab-pane .map-map {
+  width: 100%;
+  height: 430px;
+}
+
+/*===// end of components css === */
+/*=== layout css start === */
+.header {
+  padding: 5px 0;
+  border-bottom: 1px solid #000000;
+}
+.header .navbar-brand {
+  max-width: 60px;
+  display: flex;
+  align-items: end;
+}
+.header .navbar-brand .brand-name {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+}
+@media (max-width: 991px) {
+  .header .navbar-collapse {
+    border: 1px solid #000000;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.7450980392);
+    top: calc(100% + 15px);
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+  }
+}
+.header .navbar-toggler:focus {
+  box-shadow: none;
+}
+.header .nav-item .nav-link {
+  font-weight: 500;
+  color: #0C234B;
+}
+.header .nav-item .nav-link.active, .header .nav-item .nav-link:hover {
+  color: #AB0520;
+}
+@media (min-width: 992px) {
+  .header .nav-item .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.footer {
+  padding: 60px 0;
+}
+@media (max-width: 1199px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+.footer .brand-name {
+  font-size: 20px;
+}
+.footer .footer-bottom {
+  border-top: 2px solid #000;
+  padding: 50px 0;
+}
+@media (min-width: 1200px) {
+  .footer .footer-bottom {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer .footer-bottom {
+    padding: 30px 0;
+  }
+}
+.footer .footer-bottom a {
+  text-decoration: underline;
+  color: #000;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/*===// end of layout css === */
+/*=== pages start === */
+.hero {
+  background: url(../images/ua_garage.jpg) no-repeat center center/cover;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.431);
+}
+.hero .wrapper {
+  min-height: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+}
+
+.s-icon {
+  color: #0C234B;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#myMap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+#mapSection1, #mapCatTran {
+    position: relative;
+    width: 100%;
+    min-width: 290px;
+    height: auto; 
+}
+
+ #myparking {
+    position: relative;
+    width: 100%;
+    min-width: 290px;
+    height: auto; 
+}
+
+
+.map-and-tracker-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+            min-width: 290px;
+        }
+
+
+        .map-and-tracker-container iframe.cat-tran-tracker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }

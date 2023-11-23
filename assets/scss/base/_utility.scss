@@ -1,0 +1,44 @@
+@use './../abstracts/variables';
+
+.custom-gutter {
+
+    @media(min-width: 1200px) {
+        --bs-gutter-x: 80px;
+    }
+}
+
+.border-red {
+    border: 1px solid variables.$color-primary;
+}
+
+.border-red-light {
+    border: 1px solid #791022;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+.section-padding {
+    padding: 100px 0;
+
+    @media(max-width: 1199px) {
+        padding: 60px 0;
+    }
+
+    @media(max-width: 1199px) {
+        padding: 40px 0;
+    }
+}
+
+.my-25 {
+    margin: 12px 0;
+}
+
+// color
+.text-red {
+    color:  variables.$color-primary;
+}
+.text-blue {
+    color:  variables.$color-secondary;
+}

@@ -1,0 +1,38 @@
+@use './../abstracts/variables';
+
+.big-heading {
+  font-weight: 700;
+  color: variables.$color-secondary;
+
+  @media(min-width: 1200px) {
+    font-size: 50px;
+  }
+}
+
+.heading-medium {
+  font-weight: 700;
+  color: variables.$color-secondary;
+
+  @media(min-width: 1200px) {
+    font-size: 45px;
+  }
+}
+
+.normal-text {
+  font-weight: 500;
+}
+
+.section-title {
+  color: variables.$color-secondary;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: variables.$color-secondary;
+}

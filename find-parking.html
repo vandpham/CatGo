@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags, title, and stylesheets -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CatGo | Find Parking</title>
+  <link rel='shortcut icon' href='assets/images/fav.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg p-0">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+          <span class="brand-name text-blue ps-1"><strong>CatGo</strong></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto p-3 p-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="find-parking.html">Find Parking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="track-traffic.html">Track Traffic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="parking-owners.html">Rent Your Space</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- header ended -->
+
+  <!-- main inner contents -->
+ <main>
+        <!-- Cat Tran Tracker Section -->
+    <section class="banner section-padding">
+      <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Find nearby parking</h2>
+                <div class="parking-container">
+                  <div id="myparking"></div>
+                    <iframe id="parking" class="cat-tran-tracker" src="search.html" frameborder="0"></iframe>
+
+                </div>
+            </div>
+        </div>
+  </main>
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="flex-shrink-0 me-lg-4">
+          <div class="d-flex align-items-center">
+            <img width="50" src="assets/images/logo.png" alt="logo" class="img-fluid">
+            <a href="index.html" span class="brand-name text-blue ps-1"><strong>CatGo</strong></a>
+          </div>
+        </div>
+        <div class="py-4 py-lg-0 ps-lg-5">
+          <ul class="d-flex flex-column flex-md-row align-items-center ps-0 ps-lg-5">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-3 mx-md-1" href="find-parking.html">Find Parking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-3 mx-md-1" href="track-traffic.html">Track Traffic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-3 mx-md-1" href="parking-owners.html">Rent Your Space</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-lg-3 mx-md-1" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column-reverse flex-md-row justify-content-center align-items-center">
+        <p class="pe-md-3">© 2023 CatGo. All rights reserved.</p>
+        <a href="#" class="ms-0">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#"> Cookies Settings</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- Bootstrap and custom scripts -->
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

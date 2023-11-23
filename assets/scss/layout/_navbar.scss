@@ -1,0 +1,51 @@
+@use './../abstracts/variables';
+
+.header {
+    padding: 5px 0;
+    border-bottom: 1px solid #000000;
+
+    .navbar-brand {
+        max-width: 60px;
+        display: flex;
+        align-items: end;
+
+        .brand-name {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 22px;
+        }
+    }
+
+    .navbar-collapse {
+        @media(max-width:991px) {
+            border: 1px solid #000000;
+            backdrop-filter: blur(20px);
+            background: #ffffffbe;
+            top: calc(100% + 15px);
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .nav-item {
+        .nav-link {
+            font-weight: 500;
+            color: variables.$color-secondary;
+
+            &.active,
+            &:hover {
+                color: variables.$color-primary;
+            }
+            @media (min-width: 992px) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+}

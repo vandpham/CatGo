@@ -1,0 +1,35 @@
+.faq {
+    .accordion {
+        border-bottom: 2px solid #000;
+
+        .accordion-item {
+            border: none;
+            border-top: 2px solid;
+            border-radius: 0px;
+            margin-bottom: 20px;
+
+            .accordion-header {
+
+                .accordion-button {
+                    padding: 20px 0;
+                    background: #00000000;
+                    --bs-accordion-border-color: #fff;
+                    font-weight: 700;
+                    font-size: 18px;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .accordion-body {
+                max-width: 820px;
+                padding: 10px 0;
+                border: none;
+                background: #00000000;
+            }
+        }
+    }
+
+}
